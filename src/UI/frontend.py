@@ -1,4 +1,4 @@
-#Step1: Setup UI 
+#Step1: Setup UI
 import streamlit as st
 import requests
 
