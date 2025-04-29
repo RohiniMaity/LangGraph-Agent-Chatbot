@@ -21,12 +21,19 @@ A Streamlit + FastAPI-based AI chatbot UI that allows users to create and intera
 ```
 LangGraph-Agent-Chatbot/
 │
-├── frontend.py       # Streamlit UI for interacting with the chatbot
-├── backend.py        # FastAPI backend that handles chat requests
-├── ai_agent.py       # Core logic to create agents and fetch responses
-├── .env              # API keys for Groq, OpenAI, and Tavily
-├── requirements.txt  # List of required Python packages
-└── README.md         # You're here!
+├── src
+├── ├── core
+├── ├── ├── ai_agent.py           # Core logic to create agents and fetch responses
+├── ├── UI
+├── ├── ├── frontend.py           # Streamlit UI for interacting with the chatbot
+├── ├── APIs
+├── ├── ├── backend.py            # FastAPI backend that handles chat requests
+├── ├── common
+├── ├── ├── pydantic_models
+├── ├── ├── ├── request_model.py  # Pydantic Model for Request 
+├── ├── .env                      # API keys for Groq, OpenAI, and Tavily
+├── ├── requirements.txt          # List of required Python packages
+├── └── README.md                 # You're here!
 ```
 
 ---
